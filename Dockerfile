@@ -14,7 +14,7 @@ MAINTAINER imrambo
 COPY ./ /kb/module
 RUN mkdir -p /kb/module/work
 RUN chmod -R a+rw /kb/module
-RUN conda create -n VAMB --python=3.7 \
+RUN conda create -n VAMB python=3.7 \
 	&& conda install -n VAMB -c bioconda vamb
 
 
